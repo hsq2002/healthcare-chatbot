@@ -1,0 +1,241 @@
+Dialogue,Symptoms,Condition
+"Patient: I've been having a headache and a sore throat.
+Doctor: How long have you been experiencing these symptoms?
+Patient: About three days.
+Doctor: Any fever or other symptoms?
+Patient: Yes, I've had a slight fever.","headache, sore throat, fever",Common Cold
+"Patient: My stomach hurts and I feel nauseous.
+Doctor: When did the pain start?
+Patient: It started yesterday after dinner.
+Doctor: Have you eaten anything unusual?
+Patient: I had some spicy food.","stomach pain, nausea",Food Poisoning
+"Patient: I'm feeling very tired and my muscles ache.
+Doctor: How long have you felt this way?
+Patient: For about a week.
+Doctor: Any other symptoms like fever or cough?
+Patient: No, just the fatigue and muscle pain.","fatigue, muscle pain",Flu
+"Patient: I have a runny nose and I'm sneezing a lot.
+Doctor: How long have you had these symptoms?
+Patient: It's been two days.
+Doctor: Any itching in your eyes or throat?
+Patient: Yes, my eyes are itchy.","runny nose, sneezing, itchy eyes",Allergic Rhinitis
+"Patient: I have a rash on my arm and it's very itchy.
+Doctor: When did the rash appear?
+Patient: It appeared two days ago.
+Doctor: Have you used any new products or eaten something unusual?
+Patient: I used a new soap.","rash, itchy skin",Contact Dermatitis
+"Patient: I've been coughing a lot and my chest feels tight.
+Doctor: How long have you been experiencing this?
+Patient: For about a week.
+Doctor: Any fever or other symptoms?
+Patient: Yes, I've had a mild fever.","coughing, chest tightness, fever",Bronchitis
+"Patient: My back has been hurting a lot.
+Doctor: When did the pain start?
+Patient: It started last week after I lifted something heavy.
+Doctor: Have you taken any medication?
+Patient: I've been taking painkillers.",back pain,Muscle Strain
+"Patient: I've had a sore throat and my voice is hoarse.
+Doctor: How long have you had these symptoms?
+Patient: For three days.
+Doctor: Any fever or other symptoms?
+Patient: No, just the sore throat and hoarseness.","sore throat, hoarse voice",Laryngitis
+"Patient: I'm having trouble breathing and my chest hurts.
+Doctor: How long have you been feeling this way?
+Patient: For about two days.
+Doctor: Any other symptoms like fever or cough?
+Patient: Yes, I've been coughing a lot.","difficulty breathing, chest pain, coughing",Asthma
+"Patient: I've been feeling dizzy and lightheaded.
+Doctor: How long have you been experiencing this?
+Patient: For about a week.
+Doctor: Any other symptoms?
+Patient: No, just the dizziness and lightheadedness.","dizziness, lightheadedness",Vertigo
+"Patient: My joints are very painful and swollen.
+Doctor: How long have you had these symptoms?
+Patient: For about a month.
+Doctor: Any other symptoms?
+Patient: Sometimes I feel feverish.","joint pain, swelling, feverish",Rheumatoid Arthritis
+"Patient: I've been having severe headaches and my vision is blurry.
+Doctor: How long have you had these symptoms?
+Patient: For about two weeks.
+Doctor: Any other symptoms?
+Patient: No, just the headaches and blurred vision.","headaches, blurred vision",Migraine
+"Patient: I have a persistent cough and I'm coughing up phlegm.
+Doctor: How long have you had this cough?
+Patient: For about a week.
+Doctor: Any other symptoms?
+Patient: No, just the cough and phlegm.","persistent cough, phlegm",Bronchitis
+"Patient: My throat is very sore and it's hard to swallow.
+Doctor: How long have you had these symptoms?
+Patient: For about four days.
+Doctor: Any other symptoms?
+Patient: Yes, I have a fever.","sore throat, fever",Pharyngitis
+"Patient: I've been having stomach cramps and diarrhea.
+Doctor: How long have you had these symptoms?
+Patient: For two days.
+Doctor: Have you eaten anything unusual?
+Patient: I had some street food two days ago.","stomach cramps, diarrhea",Gastroenteritis
+"Patient: I've been feeling very anxious and I can't sleep.
+Doctor: How long have you been feeling this way?
+Patient: For about a month.
+Doctor: Any other symptoms?
+Patient: No, just the anxiety and insomnia.","anxiety, insomnia",Generalized Anxiety Disorder
+"Patient: I have a rash on my face and it's very itchy.
+Doctor: How long have you had this rash?
+Patient: For about a week.
+Doctor: Have you used any new products?
+Patient: I started using a new face cream.","rash, itchy skin",Contact Dermatitis
+"Patient: I've been having chest pain and shortness of breath.
+Doctor: How long have you had these symptoms?
+Patient: For about a week.
+Doctor: Any other symptoms?
+Patient: No, just the chest pain and shortness of breath.","chest pain, shortness of breath",Angina
+"Patient: My ears are ringing and I can't hear well.
+Doctor: How long have you had these symptoms?
+Patient: For about three days.
+Doctor: Any other symptoms?
+Patient: No, just the ringing and hearing loss.","ringing in ears, hearing loss",Tinnitus
+"Patient: I've been feeling very depressed and I have no energy.
+Doctor: How long have you been feeling this way?
+Patient: For about two months.
+Doctor: Any other symptoms?
+Patient: No, just the depression and fatigue.","depression, fatigue",Major Depressive Disorder
+"Patient: I've been having frequent urination and it's painful.
+Doctor: How long have you had these symptoms?
+Patient: For about a week.
+Doctor: Any other symptoms?
+Patient: Yes, there's blood in my urine.","frequent urination, painful urination, blood in urine",Urinary Tract Infection
+"Patient: I've been having severe headaches and I'm very sensitive to light.
+Doctor: How long have you had these symptoms?
+Patient: For about five days.
+Doctor: Any other symptoms?
+Patient: No, just the headaches and light sensitivity.","severe headaches, light sensitivity",Migraine
+"Patient: My throat is very sore and my lymph nodes are swollen.
+Doctor: How long have you had these symptoms?
+Patient: For about three days.
+Doctor: Any other symptoms?
+Patient: Yes, I have a fever.","sore throat, swollen lymph nodes, fever",Tonsillitis
+"Patient: I've been having stomach pain and I feel bloated.
+Doctor: How long have you had these symptoms?
+Patient: For about a week.
+Doctor: Any other symptoms?
+Patient: No, just the stomach pain and bloating.","stomach pain, bloating",Irritable Bowel Syndrome
+"Patient: I've been feeling very tired and I have no appetite.
+Doctor: How long have you been feeling this way?
+Patient: For about two weeks.
+Doctor: Any other symptoms?
+Patient: No, just the fatigue and loss of appetite.","fatigue, loss of appetite",Chronic Fatigue Syndrome
+"Patient: My skin is very dry and itchy.
+Doctor: How long have you had these symptoms?
+Patient: For about a month.
+Doctor: Have you used any new products?
+Patient: No, I haven't changed anything.","dry skin, itchy skin",Eczema
+"Patient: I've been having a lot of gas and my stomach hurts.
+Doctor: How long have you had these symptoms?
+Patient: For about a week.
+Doctor: Any other symptoms?
+Patient: No, just the gas and stomach pain.","gas, stomach pain",Indigestion
+"Patient: I've been feeling very anxious and my heart races.
+Doctor: How long have you been feeling this way?
+Patient: For about a month.
+Doctor: Any other symptoms?
+Patient: No, just the anxiety and racing heart.","anxiety, racing heart",Panic Disorder
+"Patient: I have a persistent cough and my throat is scratchy.
+Doctor: How long have you had this cough?
+Patient: For about two weeks.
+Doctor: Any other symptoms?
+Patient: No, just the cough and scratchy throat.","persistent cough, scratchy throat",Laryngitis
+"Patient: My feet are very swollen and it's hard to walk.
+Doctor: How long have you had these symptoms?
+Patient: For about a week.
+Doctor: Any other symptoms?
+Patient: No, just the swelling and difficulty walking.","swollen feet, difficulty walking",Edema
+"Patient: I've been having chest pain and my heart feels irregular.
+Doctor: How long have you had these symptoms?
+Patient: For about three days.
+Doctor: Any other symptoms?
+Patient: No, just the chest pain and irregular heartbeat.","chest pain, irregular heartbeat",Arrhythmia
+"Patient: I've been having severe headaches and I'm very sensitive to noise.
+Doctor: How long have you had these symptoms?
+Patient: For about a week.
+Doctor: Any other symptoms?
+Patient: No, just the headaches and noise sensitivity.","severe headaches, noise sensitivity",Migraine
+"Patient: My throat is very sore and my voice is hoarse.
+Doctor: How long have you had these symptoms?
+Patient: For about five days.
+Doctor: Any other symptoms?
+Patient: No, just the sore throat and hoarseness.","sore throat, hoarse voice",Pharyngitis
+"Patient: I've been having stomach pain and I feel nauseous.
+Doctor: How long have you had these symptoms?
+Patient: For about two days.
+Doctor: Any other symptoms?
+Patient: No, just the stomach pain and nausea.","stomach pain, nausea",Gastroenteritis
+"Patient: I've been feeling very tired and I can't concentrate.
+Doctor: How long have you been feeling this way?
+Patient: For about three weeks.
+Doctor: Any other symptoms?
+Patient: No, just the fatigue and difficulty concentrating.","fatigue, difficulty concentrating",Chronic Fatigue Syndrome
+"Patient: My skin is very itchy and I have red bumps.
+Doctor: How long have you had these symptoms?
+Patient: For about a week.
+Doctor: Have you used any new products?
+Patient: No, I haven't changed anything.","itchy skin, red bumps",Hives
+"Patient: I've been having a lot of gas and I feel bloated.
+Doctor: How long have you had these symptoms?
+Patient: For about five days.
+Doctor: Any other symptoms?
+Patient: No, just the gas and bloating.","gas, bloating",Indigestion
+"Patient: I've been feeling very anxious and I can't eat.
+Doctor: How long have you been feeling this way?
+Patient: For about a month.
+Doctor: Any other symptoms?
+Patient: No, just the anxiety and loss of appetite.","anxiety, loss of appetite",Generalized Anxiety Disorder
+"Patient: I have a persistent cough and I'm very tired.
+Doctor: How long have you had this cough?
+Patient: For about a week.
+Doctor: Any other symptoms?
+Patient: No, just the cough and fatigue.","persistent cough, fatigue",Bronchitis
+"Patient: My feet are very swollen and they hurt.
+Doctor: How long have you had these symptoms?
+Patient: For about two weeks.
+Doctor: Any other symptoms?
+Patient: No, just the swelling and pain.","swollen feet, pain",Edema
+"Patient: I've been having chest pain and my arms feel weak.
+Doctor: How long have you had these symptoms?
+Patient: For about three days.
+Doctor: Any other symptoms?
+Patient: No, just the chest pain and arm weakness.","chest pain, arm weakness",Myocardial Infarction
+"Patient: I've been having severe headaches and my neck is stiff.
+Doctor: How long have you had these symptoms?
+Patient: For about five days.
+Doctor: Any other symptoms?
+Patient: No, just the headaches and stiff neck.","severe headaches, stiff neck",Meningitis
+"Patient: My throat is very sore and I have white spots.
+Doctor: How long have you had these symptoms?
+Patient: For about a week.
+Doctor: Any other symptoms?
+Patient: Yes, I have a fever.","sore throat, white spots, fever",Strep Throat
+"Patient: I've been having stomach pain and I can't eat.
+Doctor: How long have you had these symptoms?
+Patient: For about two days.
+Doctor: Any other symptoms?
+Patient: No, just the stomach pain and loss of appetite.","stomach pain, loss of appetite",Gastroenteritis
+"Patient: I've been feeling very tired and I have a headache.
+Doctor: How long have you been feeling this way?
+Patient: For about a week.
+Doctor: Any other symptoms?
+Patient: No, just the fatigue and headache.","fatigue, headache",Chronic Fatigue Syndrome
+"Patient: My skin is very dry and it cracks.
+Doctor: How long have you had these symptoms?
+Patient: For about a month.
+Doctor: Have you used any new products?
+Patient: No, I haven't changed anything.","dry skin, cracks",Psoriasis
+"Patient: I've been having a lot of gas and my stomach hurts.
+Doctor: How long have you had these symptoms?
+Patient: For about three days.
+Doctor: Any other symptoms?
+Patient: No, just the gas and stomach pain.","gas, stomach pain",Indigestion
+"Patient: I've been feeling very anxious and I have chest pain.
+Doctor: How long have you been feeling this way?
+Patient: For about a week.
+Doctor: Any other symptoms?
+Patient: No, just the anxiety and chest pain.","anxiety, chest pain",Panic Disorder
