@@ -1,42 +1,58 @@
-from dotenv import load_dotenv
-from flask import Flask, request, jsonify
-import openai
 import os
+from flask import Flask, request, jsonify, render_template
+from openai import OpenAI
+from dotenv import load_dotenv 
 
-# Set your OpenAI API key
-openai.api_key = os.getenv('OPENAI_API_KEY')
+#load environment variable from .env file
+load_dotenv()
 
-app = Flask(__name__)
+# Set up the OpenAI client
+api_key = os.getenv("OPEN_API_KEY")
+client = OpenAI(api_key=api_key)
 
-def get_openai_response(prompt):
-    response = openai.Completion.create(
-        engine="text-davinci-003",  # or "gpt-4" if you have access
-        prompt=prompt,
-        max_tokens=150,
-        n=1,
-        stop=None,
-        temperature=0.7,
+app = Flask(__name__, template_folder="../templates")
+
+# Store conversation state
+conversation = [{"role": "system", "content": "You are a healthcare assistant. Provide accurate and helpful healthcare information and diagnoses based on user symptoms."}]
+
+def is_healthcare_related(prompt):
+    healthcare_keywords = [
+        "symptom", "diagnosis", "health", "doctor", "medicine", "treatment",
+        "medical", "illness", "disease", "pain", "fever", "injury", "infection",
+        "therapy", "prescription", "clinic", "hospital", "nurse", "emergency",
+        "surgery", "cough", "cold", "flu", "virus", "bacteria", "rash", "allergy",
+        "headache", "migraine", "stomachache", "fracture", "burn", "wound"
+    ]
+    prompt_lower = prompt.lower()
+    for keyword in healthcare_keywords:
+        if keyword in prompt_lower:
+            return True
+    return False
+
+def chat_gpt(prompt):
+    global conversation
+    if not is_healthcare_related(prompt):
+        return "I'm here to provide healthcare assistance. Please ask a health-related question."
+
+    conversation.append({"role": "user", "content": prompt})
+    response = client.chat.completions.create(
+        model="gpt-3.5-turbo",
+        messages=conversation
     )
-    return response.choices[0].text.strip()
+    reply = response.choices[0].message.content.strip()
+    conversation.append({"role": "assistant", "content": reply})
+    return reply
 
-@app.route("/chat", methods=["POST"])
+@app.route('/')
+def home():
+    return render_template('index.html')
+
+@app.route('/chat', methods=['POST'])
 def chat():
     data = request.json
-    user_input = data.get("message", "")
-    if user_input:
-        bot_response = get_openai_response(user_input)
-        return jsonify({"response": bot_response})
-    return jsonify({"error": "No message provided"}), 400
+    message = data.get('message', '')
+    response = chat_gpt(message)
+    return jsonify({'response': response})
 
-# def chat_with_gpt():
-#     print("Chat with OpenAI. Type 'exit' to end the conversation.")
-#     while True:
-#         user_input = input("You: ")
-#         if user_input.lower() == 'exit':
-#             print("Ending conversation.")
-#             break
-#         bot_response = get_openai_response(user_input)
-#         print(f"Bot: {bot_response}")
-
-if __name__ == "__main__":
+if __name__ == '__main__':
     app.run(debug=True)
