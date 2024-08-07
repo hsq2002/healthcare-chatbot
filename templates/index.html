@@ -25,27 +25,29 @@
     </div>
 
     <script>
-      $(document).ready(function () {
-        var user_id = "user_" + Math.random().toString(36).substr(2, 9);
+        $(document).ready(function () {
+          var user_id = "user_" + Math.random().toString(36).substr(2, 9);
 
-        $("#chat-form").on("submit", function (event) {
-          event.preventDefault();
-          var message = $("#message").val();
-          $("#messages").append("<p><strong>You:</strong> " + message + "</p>");
-          $("#message").val("");
-          $.ajax({
-            url: "/chat",
-            type: "POST",
-            contentType: "application/json",
-            data: JSON.stringify({ user_id: user_id, message: message }),
-            success: function (response) {
-              $("#messages").append(
-                "<p><strong>Assistant:</strong> " + response.response + "</p>"
-              );
-            },
+          $("#chat-form").on("submit", function (event) {
+            event.preventDefault();
+            var message = $("#message").val();
+            $("#messages").append("<p><strong>You:</strong> " + message + "</p>");
+            $("#message").val("");
+            $.ajax({
+              url: "/chat",
+              type: "POST",
+              contentType: "application/json",
+              data: JSON.stringify({ user_id: user_id, message: message }),
+              success: function (response) {
+                $("#messages").append(
+                  "<p><strong>Assistant:</strong> " + response.response + "</p>"
+                );
+              },
+            });
+            $("h1").fadeOut(500); // Fade out h1 tag smoothly
           });
         });
-      });
-    </script>
+      </script>
+
   </body>
 </html>
