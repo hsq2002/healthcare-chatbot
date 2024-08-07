@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+}
+
+#chatbox {
+    width: 500px;
+    max-width: 100%;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+#messages {
+    height: 300px;
+    overflow-y: scroll;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #fafafa;
+}
+
+#messages p {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#messages p strong {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#messages p:nth-child(odd) {
+    background-color: #e6f7ff;
+}
+
+#messages p:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#chat-form {
+    display: flex;
+    justify-content: space-between;
+}
+
+#chat-form input[type="text"] {
+    width: 75%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#chat-form input[type="submit"] {
+    width: 20%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+#chat-form input[type="submit"]:hover {
+    background-color: #0056b3;
+}

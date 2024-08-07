@@ -1,39 +1,51 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Healthcare Assistant</title>
+  <head>
+    <title>Healthcare chatbot</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ url_for('static', filename='styles.css') }}"
+    />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-</head>
-<body>
-    <h1>Healthcare Assistant</h1>
+  </head>
+  <body>
+    <h1>Healthcare chatbot</h1>
     <div id="chatbox">
-        <div id="messages"></div>
-        <form id="chat-form">
-            <input type="text" id="message" name="message" placeholder="Describe your symptoms or ask a question">
-            <input type="submit" value="Send">
-        </form>
+      <div id="messages"></div>
+      <form id="chat-form">
+        <input
+          type="text"
+          id="message"
+          name="message"
+          placeholder="Describe your symptoms or ask a question"
+        />
+        <input type="submit" value="Send" />
+      </form>
     </div>
 
     <script>
-        $(document).ready(function(){
-            var user_id = 'user_' + Math.random().toString(36).substr(2, 9);
+      $(document).ready(function () {
+        var user_id = "user_" + Math.random().toString(36).substr(2, 9);
 
-            $('#chat-form').on('submit', function(event){
-                event.preventDefault();
-                var message = $('#message').val();
-                $('#messages').append('<p><strong>You:</strong> ' + message + '</p>');
-                $('#message').val('');
-                $.ajax({
-                    url: '/chat',
-                    type: 'POST',
-                    contentType: 'application/json',
-                    data: JSON.stringify({user_id: user_id, message: message}),
-                    success: function(response) {
-                        $('#messages').append('<p><strong>Assistant:</strong> ' + response.response + '</p>');
-                    }
-                });
-            });
+        $("#chat-form").on("submit", function (event) {
+          event.preventDefault();
+          var message = $("#message").val();
+          $("#messages").append("<p><strong>You:</strong> " + message + "</p>");
+          $("#message").val("");
+          $.ajax({
+            url: "/chat",
+            type: "POST",
+            contentType: "application/json",
+            data: JSON.stringify({ user_id: user_id, message: message }),
+            success: function (response) {
+              $("#messages").append(
+                "<p><strong>Assistant:</strong> " + response.response + "</p>"
+              );
+            },
+          });
         });
+      });
     </script>
-</body>
+  </body>
 </html>
