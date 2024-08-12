@@ -10,7 +10,9 @@ load_dotenv()
 api_key = os.getenv("OPEN_API_KEY")
 client = OpenAI(api_key=api_key)
 
-app = Flask(__name__, template_folder="../templates")
+
+app = Flask(__name__, static_folder="../static", template_folder="../templates")
+
 
 # Store conversation state
 conversation = [{"role": "system", "content": "You are a healthcare assistant. Provide accurate and helpful healthcare information and diagnoses based on user symptoms."}]

@@ -1,0 +1,144 @@
+body {
+    font-family: 'Roboto', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0d1b2a; /* dark blue background */
+    color: #ffffff; /* white text color */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #0d1b2a; /* matching the dark blue background */
+}
+
+.menu-icon, .settings-icon {
+    font-size: 24px;
+    cursor: pointer;
+    color: #ffffff; /* white icon color for visibility */
+}
+
+.logo {
+    color: #ffffff; /* ensures the logo text is white */
+    font-size: 24px;
+}
+
+/* Chat Container */
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    height: calc(100% - 60px); /* Adjusted height to account for header */
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    border-radius: 25px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Optional: Adds shadow for depth */
+}
+
+/* Chat Messages Area */
+.chat-messages {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding: 10px 20px; /* Adjusted padding */
+    border-radius: 15px; /* Rounded inner container for messages */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Aligns child elements (user messages) to the right */
+}
+
+.chat-message {
+    width: 70%; /* Set a specific width for all message boxes */
+    margin: 10px 0; /* Adds top and bottom margin for separation */
+    padding: 10px;
+    border-radius: 8px;
+    display: flex; /* Using flex to help align the text properly within the box */
+    align-items: center; /* Aligns the content of the box vertically */
+    justify-content: center; /* Centers the content horizontally */
+}
+
+.chat-message.user {
+    background-color: #1b263b; /* darker blue for user messages */
+    text-align: right; /* Text alignment to the right for user messages */
+    align-self: flex-end; /* Aligns user messages to the right */
+    margin-left: auto; /* Ensures the box is pushed to the right */
+    color: #ffffff; /* Ensures text color is white for readability */
+    max-width: 70%; /* Ensures the box does not exceed 70% width */
+}
+
+.chat-message.bot {
+    background-color: #415a77; /* lighter blue for bot messages */
+    text-align: left; /* Text alignment to the left for bot messages */
+    align-self: flex-start; /* Aligns bot messages to the left */
+    margin-right: auto; /* Ensures the box is pushed to the left */
+    color: #ffffff; /* Ensures text color is white for readability */
+    max-width: 70%; /* Ensures the box does not exceed 70% width */
+}
+
+/* Input Area */
+.chat-input-container {
+    display: flex;
+    background-color: #1b263b;
+    padding: 10px;
+    border-radius: 20px; /* More rounded corners for the input area */
+    margin: 0 10px; /* Adjust margin to fit within the rounded container */
+    justify-content: flex-end; /* Aligns the input and button to the right */
+}
+
+.chat-input {
+    flex-grow: 1;
+    background-color: transparent; /* Transparent background for the input field */
+    color: #ffffff; /* White text color for visibility */
+    border: none; /* No border for a cleaner look */
+    padding: 10px;
+    border-radius: 10px; /* Rounded corners for the input field */
+    margin-right: 10px; /* Right margin to separate from the send button */
+}
+
+.chat-input::placeholder {
+    color: #cccccc; /* Lighter color for placeholder text */
+}
+
+.chat-input:focus {
+    outline: none;
+    background-color: transparent; /* Ensure the background remains transparent */
+}
+
+.chat-submit-button {
+    margin-left: auto; /* This will push the button to the far right */
+    background-color: #415a77;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px; /* Rounded corners for the send button */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.chat-submit-button:hover {
+    background-color: #1b263b;
+}
+
+.chat-submit-button::after {
+    content: "↑"; /* Upwards arrow symbol */
+    display: block;
+    text-align: center; /* Centers the arrow in the button */
+}
+
+/* Scrollbar Styling */
+.chat-messages::-webkit-scrollbar {
+    width: 6px;
+}
+
+.chat-messages::-webkit-scrollbar-thumb {
+    background-color: #415a77;
+    border-radius: 3px; /* Rounded scrollbar thumb */
+}
